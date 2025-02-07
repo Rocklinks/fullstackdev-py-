@@ -1,0 +1,29 @@
+# Read file
+with open('homework.txt', 'r') as file:
+    print(file.read())
+
+#Write to File
+with open('outpt.txt', 'a') as file:
+    content="""Hello, World!
+Welcome to File Handling in Python."""
+    file.write(content)
+
+#word count
+with open('outpt.txt','r') as file:
+    wc=file.read().split()
+    print(len(wc))
+
+#Append
+with open('outpt.txt','a') as file:
+    file.write("\nPython is Fun!")
+
+with open('outpt.txt','r') as source:
+    s=source.read()
+
+with open('dest.txt','w') as destination:
+    destination.write(s)
+
+#Count the occurences of the word
+file= open('outpt.txt','r').read().split()
+count =file.count('Python')
+print(count)
