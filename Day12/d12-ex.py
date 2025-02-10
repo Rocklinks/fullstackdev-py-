@@ -25,3 +25,11 @@ with open("source.txt", "r") as source_file:
 # # Write the content to copy.txt
 with open("destination.txt", "w") as destination_file:
     destination_file.write(content)
+
+
+with open('output.txt', "r", encoding="utf-8") as file:
+    content = file.read()
+    
+word_count = content.count("Python")
+
+print(f'The word "Python" appears {word_count} times in the file.')
