@@ -1,7 +1,7 @@
 #File write
 with open('myfile.txt', "w") as file:
-    content = """Hello, this is a file handling assignment.
-Python makes it easy to work with files."""
+    content = """Hello, World!
+Welcome to File Handling in Python."""
     file.write(content)
 
 # ## File Read
