@@ -9,13 +9,14 @@ class PetrolCar(Vehicle):
 class ElectricCar(Vehicle):
     def fuel_type(self):
         return "Electric"
-
-# Example Usage
+    
 petrol_car = PetrolCar()
 electric_car = ElectricCar()
-print(petrol_car.fuel_type())  # Output: Petrol
-print(electric_car.fuel_type())  # Output: Electric
+print(petrol_car.fuel_type())  
+print(electric_car.fuel_type()) 
 
+
+#Task2
 class LightSystem:
     def turn_on_lights(self):
         return "Lights turned on"
@@ -24,16 +25,17 @@ class SecuritySystem:
     def activate_alarm(self):
         return "Alarm activated"
 
+
 class SmartHome(LightSystem, SecuritySystem):
     def home_status(self):
         return "Smart home is operational"
 
-# Example Usage
 smart_home = SmartHome()
-print(smart_home.turn_on_lights())  # Output: Lights turned on
-print(smart_home.activate_alarm())  # Output: Alarm activated
-print(smart_home.home_status())  # Output: Smart home is operational
+print(smart_home.turn_on_lights())  
+print(smart_home.activate_alarm())  
+print(smart_home.home_status()) 
 
+#Task3
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -53,6 +55,5 @@ class Manager(Employee):
     def display_info(self):
         return f"Name: {self.name}, Age: {self.age}, ID: {self.employee_id}, Department: {self.department}, Team Size: {self.team_size}"
 
-# Example Usage
 manager = Manager("Alice", 35, "M123", "IT", 10)
 print(manager.display_info())
