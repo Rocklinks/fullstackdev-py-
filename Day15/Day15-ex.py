@@ -35,7 +35,7 @@ print(smart_home.turn_on_lights())
 print(smart_home.activate_alarm())  
 print(smart_home.home_status()) 
 
-#Task3
+#Task
 class Person:
     def __init__(self, name, age):
         self.name = name
