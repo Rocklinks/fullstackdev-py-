@@ -43,5 +43,19 @@
 # cursor.execute("SELECT * FROM employees")
 # print(f"Remaining Employees: {cursor.fetchall()}")
 
-import re
+#cursor.close()
+#conn.close()
 
+import re
+def contacts(text):
+    email_pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b"
+    phone_pattern = r"\b\d{10}\b|\b\d{3}-\d{3}-\d{4}\b"
+
+    email = re.findall(email_pattern,text)
+    phone = re.findall(phone_pattern, text)
+    return email, phone
+
+text = input("Enter a para of text: ")
+email,phone =contacts(text)
+print(f"Extracted Emails: {email}")
+print(f"Extracted numbers: {phone}")
