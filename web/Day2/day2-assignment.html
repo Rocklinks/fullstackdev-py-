@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><form>
+          <label for="name" style="color: blue; font-size: 16px;">Name</label>
+          <input type="text" required><br><br>
+          <label for="email" style="color: blue; font-size: 16px;">Email</label>
+          <input type="email" required><br><br>
+          <label for="password" style="color: blue; font-size: 16px;">Password</label>
+          <input type="password" required><br><br>
+          <label style="color: blue;">Gender</label><br>
+            <label for="gender" style="color: blue;">Male</label>
+            <input type="radio" name="Gender" value="Male" required>
+            <label for="gender" style="color: blue;">Female</label>
+            <input type="radio" name="Gender" value="Female">
+            <label for="gender" style="color: blue;">Others</label>
+            <input type="radio" name="Gender" value="Others"><br><br>
+
+            <label for="course" style="color: blue;">Course</label>
+            <select name="course" id="course" required>
+                <option value="">Select any course</option>
+                <option value="HTML" style="color: blue;">HTML</option>
+                <option value="CSS" style="color: blue;">CSS</option>
+                <option value="JSON" style="color: blue;">JSON</option>
+                <option value="Python" style="color: blue;">Python</option>
+                <option value="JS" style="color: blue;">JS</option>
+                <option value="Git" style="color: blue;">Git</option>
+            </select><br><br>
+      <label for="skills" style="color: blue;">Skills</label><br>
+      <input type="checkbox" name="skills" value="fronend" id="frontend">
+      <label for="backend" style="color: blue;">FrontEnd</label>
+      <input type="checkbox" name="skills" value="backend" id="backend">
+      <label for="backend" style="color: blue;">BackEnd</label>
+      <input type="checkbox" name="skills" value="database" id="database" >
+      <label for="database" style="color: blue;">Database</label><br><br>
+        <button type="submit" style=" border-radius: 12px; padding: 8px; background-color: blue; color: azure; font-size: medium; border: none;">Submit</button>
+      </form></div>
+</body>
+</html>
