@@ -1,0 +1,6 @@
+      c = []
+      for i in words:
+        a = i.split(separator)
+        for j in a:
+          if (j != ""):
+            c.append(j)
