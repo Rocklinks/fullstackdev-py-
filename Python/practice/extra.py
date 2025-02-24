@@ -1,2 +1,2 @@
-from main import square
+from easy import square
 print(square(5))
