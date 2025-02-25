@@ -42,16 +42,39 @@
 # print(c)
 
 #Q5
-sentence = input("Enter Sentences: ")
-words = sentence.split()
-word_count = {}
+# sentence = input("Enter Sentences: ")
+# words = sentence.lower().split()
+# word_count = {}
 
-for word in words:
-    word = word.lower()
-    if word in word_count:
-        word_count[word]+=1
-    else:
-        word_count[word]=1
+# for word in words:
+#     if word in word_count:
+#         word_count[word]+=1
+#     else:
+#         word_count[word]=1
 
-for word,count in word_count.items():
-    print(f"{word}:{count}")
+# for word,count in word_count.items():
+#     print(f"{word}:{count}")
+
+
+#Q6
+# words = input("Enter some words: ").lower().split()
+# a=[]
+# for word in words:
+#     if len(word)>5:
+#         a.append(word)
+# print(a)
+
+#Q7
+# n =int(input("Enter a number; "))
+# for i in range(1,11):
+#     a=n*i
+#     print(f"{n}x{i} = {a}")
+
+
+#Q8
+sentence =input("Enter Sentences: ").lower()
+count=1
+for word in sentence:
+    if word=='':
+        count+=1
+print(count)
