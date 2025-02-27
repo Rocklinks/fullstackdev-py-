@@ -10,7 +10,13 @@ create table if not exists employees(
 );
 
 insert into employees(name, age,department,salary) values
-	('Saravana',26,"Backend ",25000),
-	('Muthu',29,"Backend ",30000),
-	('Ravi teja',35,"Frontend ",40000),
-	('Siddharth',30,"Fullstack ",31000);
+	('Saravana',26,"Backend ",55000),
+	('Muthu',29,"Backend ",64000),
+	('Ravi teja',35,"Frontend ",45000),
+	('Siddharth',30,"Fullstack ",48000);
+    
+    
+select * from employees where salary > 50000;
+    
+    
+    
