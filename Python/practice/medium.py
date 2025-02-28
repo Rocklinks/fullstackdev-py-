@@ -72,9 +72,15 @@
 
 
 #Q8
+
 sentence =input("Enter Sentences: ").lower()
-count=1
-for word in sentence:
-    if word=='':
-        count+=1
-print(count)
+count = 0
+word = False
+for char in sentence:
+    if char.isalnum():
+        if not word:
+            count +=1
+            word=True
+    else:
+        word = False
+print(f"Number of words in sentences:  {count}")
