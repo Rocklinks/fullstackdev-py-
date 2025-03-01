@@ -13,11 +13,11 @@ INSERT INTO grades (student_id, student_name, subject, marks) VALUES
 (2, 'Bob', 'Math', 92),
 (3, 'Charlie', 'Math', 78),
 (4, 'David', 'Science', 88),
-(5, 'Eve', 'Science', 95),
-(6, 'Frank', 'Science', 80),
-(7, 'Grace', 'English', 90),
-(8, 'Hank', 'English', 85),
-(9, 'Ivy', 'English', 88);
+(5, 'Jai', 'Science', 95),
+(6, 'Bheem', 'Science', 80),
+(7, 'Francis', 'English', 90),
+(8, 'Vicky', 'English', 85),
+(9, 'Farhan', 'English', 88);
 
 SELECT 
     subject, 
@@ -46,12 +46,12 @@ CREATE TABLE grades (
 
 -- Step 4: Insert sample data into students table
 INSERT INTO students (student_id, student_name) VALUES
-(1, 'Alice'),
-(2, 'Bob'),
-(3, 'Charlie'),
+(1, 'Charles'),
+(2, 'BAskar'),
+(3, 'Sethu'),
 (4, 'David'),
-(5, 'Eve'),
-(6, 'Frank');
+(5, 'Simson'),
+(6, 'Stephen');
 
 -- Step 5: Insert sample data into grades table (not all students have grades)
 INSERT INTO grades (student_id, subject, marks) VALUES
