@@ -1,7 +1,7 @@
 //Task1
 var name = "John Britto";
-let age = 25; 
-const square = 16; 
+//let age = 25; 
+//const square = 16; 
 
 var name = "John Robinson"
 let age =27;
@@ -10,11 +10,11 @@ const square = 19
 //Task2 
 
 const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-readline.question("Enter your age: ", (input) => {
-const age = parseInt(input, 10);
+     input: process.stdin,
+     output: process.stdout
+ });
+ readline.question("Enter your age: ", (input) => {
+ const age = parseInt(input, 10);
 
 if (age>0 && age<=12) {
     console.log("Child")
@@ -25,8 +25,8 @@ if (age>0 && age<=12) {
 } else {
     console.log("Invalid Age")
 }
-readline.close();
-});
+ readline.close();
+ });
 
 //Task3
 for (let i=1;i<=10;i++){
