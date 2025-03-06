@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        p {
+            font-size: 16px;
+            color: darkblue;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+
+    <button onclick="changeFontSize()">Change Font Size</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <p id="removeMe">Click the remove button to delete this paragraph.</p>
+
+    <script>
+        // 1. Change font size of all <p> elements
+        function changeFontSize() {
+            let paragraphs = document.querySelectorAll("p");
+            paragraphs.forEach(p => {
+                p.style.fontSize = "20px"; // Change font size
+            });
+        }
+
+        // 2. Keydown event to show the pressed key in an alert
+        document.addEventListener("keydown", function(event) {
+            alert("You pressed: " + event.key);
+        });
+
+        // 3. Remove an element dynamically
+        function removeElement() {
+            let element = document.getElementById("removeMe");
+            if (element) {
+                element.remove();
+            }
+        }
+    </script>
+
+</body>
+</html>
