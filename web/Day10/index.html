@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Alert & Background Color Change</title>
+    <script>
+        // Function to show an alert when the page loads
+        window.onload = function() {
+            alert("Welcome to the webpage!");
+        };
+
+        // Function to change the background color every 5 seconds
+        function changeBackgroundColor() {
+            const colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        // Set an interval to change background color every 5 seconds
+        setInterval(changeBackgroundColor, 5000);
+    </script>
+</head>
+<body>
+    <h1>JavaScript Alert & Background Color Change</h1>
+    <p>The background color will change every 5 seconds.</p>
+</body>
+</html>
