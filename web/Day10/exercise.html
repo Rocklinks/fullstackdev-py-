@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <script>
+        // Function to change background color every 3 seconds
+        let colorInterval;
+        function startColorChange() {
+            colorInterval = setInterval(() => {
+                document.body.style.backgroundColor = 
+                    '#' + Math.floor(Math.random() * 16777215).toString(16);
+            }, 3000);
+        }
+
+        function stopColorChange() {
+            clearInterval(colorInterval);
+        }
+
+        // Function to log URL details and redirect after 5 seconds
+        function logAndRedirect() {
+            console.log("Protocol: " + window.location.protocol);
+            console.log("Hostname: " + window.location.hostname);
+            console.log("Pathname: " + window.location.pathname);
+
+            setTimeout(() => {
+                window.location.href = "https://www.google.com";
+            }, 16000);
+        }
+
+        // Start color change when the page loads
+        window.onload = () => {
+            startColorChange();
+            logAndRedirect();
+        };
+    </script>
+</head>
+<body>
+    <button onclick="stopColorChange()">Stop Background Change</button>
+</body>
+</html>
+
